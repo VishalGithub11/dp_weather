@@ -1,0 +1,135 @@
+.weather-app {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-app:before {
+    content: '';
+    background: url('../public/assets/clouds.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.weather-app .search {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; 
+}
+
+.weather-app input {
+    flex: 1;
+    padding: .7rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255, 0.8);
+    background: rgba(255,255,255, 0.1);
+    color: #f8f8f8;
+    margin-right: 10px; 
+}
+
+.weather-app .search-button {
+    padding: .7rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255, 0.8);
+    background: rgba(255,255,255, 0.1);
+    color: #f8f8f8;
+}
+
+.weather-app .search-button:hover {
+    background: rgba(255,255,255, 0.3);
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #f8f8f8;
+}
+  
+.weather {
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+    color: #fff;
+    background-color: #6f6f97;
+    margin: 20px auto 0 auto;
+    padding: 0 20px 20px 20px;
+  }
+  
+  .top,
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .city {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+.weather-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+  }
+  
+.weather-icon {
+    width: 100px;
+  }
+  
+.temperature {
+    font-weight: 600;
+    font-size: 70px;
+    width: auto;
+    letter-spacing: -5px;
+    margin: 10px 0;
+}
+  
+.details {
+    width: 100%;
+    padding-left: 20px;
+}
+  
+.parameter-row {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.parameter-label {
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+}
+.parameter-label-details{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+  
+.parameter-value {
+    text-align: right;
+    font-weight: 600;
+    font-size: 12px;
+}
+  
+.parameter-label.top {
+    border-bottom: 1px solid #fff;
+}
